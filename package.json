@@ -1,0 +1,42 @@
+{
+  "name": "ContactManager",
+  "version": "1.0.0",
+  "description": "Contact Manager in Angular",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "angular": "^1.4.6",
+    "angular-messages": "^1.4.6",
+    "angular-mocks": "^1.4.6",
+    "angular-resource": "^1.4.6",
+    "angular-ui-router": "^0.2.15",
+    "gulp": "^3.9.0",
+    "gulp-util": "^3.0.6",
+    "gulp-webserver": "^0.9.1",
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.10",
+    "karma-chrome-launcher": "^0.2.0",
+    "karma-coverage": "^0.5.2",
+    "karma-jasmine": "^0.3.6",
+    "karma-ng-html2js-preprocessor": "^0.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumitmann/contactmanager.git"
+  },
+  "keywords": [
+    "contact",
+    "manager",
+    "app",
+    "angularjs"
+  ],
+  "author": "Sumit Mann",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
