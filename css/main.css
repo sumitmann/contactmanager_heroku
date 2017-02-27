@@ -1,0 +1,26 @@
+/**
+ * app main .css
+ */
+.app-header{color: #fff;text-align: center;text-shadow: 0 1px 0 rgba(0, 0, 0, .1);background-color: #5992fa;padding:10px;}
+.app-header h1{padding:0;margin:0;}
+.wid_limiter{max-width:1280px;margin:0 auto;}
+.contact_card{box-shadow:0px 1px 6px #898989;padding:10px 0px 0px 0px;margin-bottom:30px;}
+.padded-icon-right{padding-right: 5px;}
+.favbtn{border:0;background-color: #eeeeee;color: #d20905;box-shadow:0px 1px 2px #787878;}
+.favbtn:hover{background-color: none;border-color: none;color: #d20905;box-shadow:0px 2px 2px #787878;}
+.btn-fav{background:#eee;color:#999;}
+.btn-fav.fav_active{color:#d20905;}
+.favicon{color: #d20905;outline:0;}
+a{color: #1b95e0;}
+a:hover,a:focus{color: #1d1429;}
+.btn_wrapper{padding-top:10px;}
+.btn_wrapper .col-xs-4{padding:0;}
+.btn{border:0;border-radius:0;outline:0;}
+.contact_add{z-index:200;position:absolute;right:0px;top:-45px;}
+.filter_options{background:#f9f9f9;padding:15px 0px 0px 0px;margin-bottom:30px;}
+.add_wrapper{background:#f0f0f0;max-width:600px;margin:0 auto;padding:20px 20px 20px 10px;}
+.add_head{border:0;}
+@media all and (max-width:768px){
+.contact_add{box-shadow:0px 0px 2px #898989;top:-38px;}
+.app-header h1{font-size:22px;}
+}

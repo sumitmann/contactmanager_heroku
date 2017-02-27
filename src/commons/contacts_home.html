@@ -1,0 +1,64 @@
+<!-- All Contacts Template  -->
+<!-- Controls Section -->
+<button type="button" class="btn btn-default contact_add" ui-sref="add">
+                <i class="fa fa-plus" aria-hidden="true"></i> <span class="hidden-xs">Add contact</span>
+   </button>
+<div class="row filter_options">
+        <!-- ToolBar Options  -->
+        <div class="col-xs-6 col-sm-4">
+            <input type="text" ng-model="contacts.search" placeholder="Search Contact" class="form-control">
+        </div>
+        <div class="col-xs-6 col-sm-4">
+            <div class="form-group">
+                    <select class="form-control" name="sortSelect" id="sortSelect" ng-model="contacts.selectVal" ng-options="option.val as option.name for option in contacts.availableOptions">
+                        <option value="">Sort Contacts By</option>
+                    </select>
+            </div>
+        </div>
+        <div class="col-xs-6 col-sm-4">
+             <div class="form-group">
+            <button type="button" class="btn btn-default favbtn" ng-click="contacts.showFav()">
+                 <i class="fa fa-star" aria-hidden="true" ng-class="{'favicon': contact.favourite}"></i> Show favorite Contacts
+            </button>
+             </div>
+        </div>
+           
+</div>
+   
+<!-- Contact List Section -->
+<div class="row">
+<div class="col-sm-6 col-md-4" ng-repeat="contact in contacts.allContacts | orderBy: contacts.selectVal | Favorite: contacts.showFavFlag | filter : contacts.search as results ">
+<div class="contact_card">
+    <div class="clearfix">
+<div class="col-xs-4">
+ <img ng-src="{{contact.avatar}}" alt="contact image" class="img-circle img-responsive" />
+ </div>
+ <div class="col-xs-8">
+ <h4>
+ {{contact.name}}
+ </h4>
+ {{contact.email}}
+ <br/>
+ {{contact.tel}}
+ </div>
+</div>
+<div class="clearfix btn_wrapper">
+    <div class="col-xs-4">
+         <button type="button" class="btn btn-default btn-fav btn-block" ng-click="contacts.addToFavorites(contact)" ng-class="{'fav_active':contact.favourite}" tooltip-placement="bottom" tooltip="{{contact.favourite ? 'Remove from favorite contacts' : 'Add to favorite contacts'}}">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                </button>
+                </div>
+                <div class="col-xs-4">
+                <button type="button" class="btn btn-primary btn-block" ui-sref="edit({id:contact.id})" tooltip-placement="bottom" tooltip="Edit contact">
+                    <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+                </button>
+                </div>
+                <div class="col-xs-4">
+                <button type="button" class="btn btn-danger btn-block" ng-click="contacts.deleteContact(contact)" tooltip-placement="bottom" tooltip="Delete contact">
+                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                </button>
+                </div>
+</div>
+</div>
+</div>
+</div>

@@ -1,0 +1,57 @@
+[{
+    "id": 1,
+    "name": "Kathryn Pierce",
+    "tel": "(863)-860-7111",
+    "email": "kathryn23@gmail.com",
+    "avatar":"./avatars/Kath.jpg",
+    "favourite": true
+},{
+    "id": 2,
+    "name": "Sebastian Murphy",
+    "tel": "(119)-526-6695",
+    "email": "sebastian.m@times.co.in",
+    "avatar":"./avatars/Sebastian.jpg",
+    "favourite": false
+},{
+    "id": 3,
+    "name": "Jon Mccoy",
+    "tel": "(797)-933-4774",
+    "email": "jonmccoy@gmail.com",
+    "avatar":"./avatars/Jon.jpg",
+    "favourite": true
+},{
+    "id": 4,
+    "name": "Camila Carlson",
+    "tel": "(667)-432-3843",
+    "email": "camila192@in.com",
+    "avatar":"./avatars/Camila.jpg",
+    "favourite": false
+},{
+    "id": 5,
+    "name": "Glenda Stevens",
+    "tel": "(507)-321-6811",
+    "email": "glenda@gmail.com",
+    "avatar":"./avatars/Glenda.jpg",
+    "favourite": true
+},{
+    "id": 6,
+    "name": "Chester Dunn",
+    "tel": "(384)-501-7312",
+    "email": "chdunn@gmail.com",
+    "avatar":"./avatars/Chester.jpg",
+    "favourite": false
+},{
+    "id": 7,
+    "name": "Rosemary Davidson",
+    "tel": "(402)-457-6657",
+    "email": "rosemary@gmail.com",
+    "avatar":"./avatars/Rosemary.jpg",
+    "favourite": true
+},{
+    "id": 8,
+    "name": "Alex Lucas",
+    "tel": "(667)-432-3843",
+    "email": "alex@in.com",
+    "avatar":"./avatars/Alex.jpg",
+    "favourite": false
+}]
